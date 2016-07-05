@@ -37,7 +37,7 @@ header{
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
-  animation: fadeIn 2s 4s forwards;
+  animation: fadeIn 2s 2s forwards;
 }
 section{
   opacity: 0;
@@ -45,7 +45,7 @@ section{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
-  animation: fadeUp 2s 6s forwards;
+  animation: fadeUp 2s 4s forwards;
   background-color: #1d3963;
 }
 h1{
@@ -77,7 +77,7 @@ button{
   text-align: center;
   color: #fff;
   font-size: 20px;
-  animation: fadeUp 2s 7s forwards;
+  animation: fadeUp 2s 5s forwards;
 }
 button:hover{
   background-color: #264b84;
