@@ -1,3 +1,11 @@
+@keyframes fadeIn{
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes fadeUp{
   0% {
     opacity: 0;
@@ -16,10 +24,12 @@ body{
   font-family: arial, sans-serif;
 }
 header{
+  opacity: 0;
   background-color: #aaa;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+  animation: fadeIn 2s 1s forwards ease-out;
 }
 section{
   opacity: 0;
@@ -27,7 +37,7 @@ section{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
-  animation: fadeUp 2s .5s forwards;
+  animation: fadeUp 2s 1.5s forwards ease-out;
   background-color: #1d3963;
 }
 h1{
