@@ -45,7 +45,7 @@ section{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
-  animation: fadeUp 2s 5s forwards;
+  animation: fadeUp 2s 6s forwards;
   background-color: #1d3963;
 }
 h1{
@@ -78,5 +78,5 @@ button{
   margin: 15px;
   color: #fff;
   font-size: 20px;
-  animation: fadeUp 2s 7s forwards;
+  animation: fadeUp 2s 8s forwards;
 }
