@@ -71,12 +71,14 @@ section p{
 }
 button{
   opacity: 0;
-  background-color: #264b84;
+  background-color: #1d3963;
   border-style: none;
   padding: 15px;
   text-align: center;
-  margin: 15px;
   color: #fff;
   font-size: 20px;
-  animation: fadeUp 2s 8s forwards;
+  animation: fadeUp 2s 7s forwards;
+}
+button:hover{
+  background-color: #264b84;
 }
