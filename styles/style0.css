@@ -26,7 +26,7 @@
 }
 body{
   background-color: #fff;
-  animation: setUpBackground 2s 0s forwards;
+  animation: setUpBackground 1s 0s forwards;
   color: #fff;
   text-align: center;
   font-family: arial, sans-serif;
