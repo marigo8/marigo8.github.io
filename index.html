@@ -8,10 +8,10 @@
   <body>
     <header>
       <h1>HELLO,</h1>
-      <h2>I AM MARIO.</h2>
+      <h1 id="specialh1">I AM MARIO.</h1>
     </header>
     <section>
-      <h3>ABOUT</h3>
+      <h2>ABOUT</h2>
       <p>
         My name is Mario Tijerino.
         I am a student learning HTML, CSS, and JavaScript.
@@ -19,9 +19,11 @@
       </p>
     </section>
     <section>
-      <h3>WIP</h3>
-      <p>This website is still being made. Don't expect anything to work.</p>
+      <h2>WIP</h2>
+      <p>This website is still being made. Don't expect everything to work.</p>
     </section>
-    <button>CONTINUE</button>
+    <button onclick="openPage('./about.html')">MORE ABOUT ME</button>
+    <button onclick="openPage('./webpages.html')">WEBPAGE A DAY</button>
+    <script src="./scripts/functions.js" type="text/javascript"></script>
   </body>
 </html>
