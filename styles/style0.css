@@ -13,7 +13,7 @@
   }
   100% {
     opacity: 1;
-    margin-top: 10px;
+    margin-top: 15px;
   }
 }
 @keyframes setUpBackground{
@@ -24,8 +24,24 @@
     background-color: #222;
   }
 }
+@keyframes darkenBackground{
+  0% {
+    background-color: #222;
+  }
+  100% {
+    background-color: #000;
+  }
+}
+@keyframes fadeOut{
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body{
-  background-color: #fff;
+  background-color: #222;
   animation: setUpBackground 1s 0s forwards;
   color: #fff;
   text-align: center;
@@ -64,12 +80,29 @@ h2{
   text-align: left;
   background-color: #264b84;
 }
+h3{
+  opacity: 0;
+  padding: 4px;
+  text-align: left;
+  margin-left: 15px;
+  width: 50%;
+  background-color: #2e5b9e;
+  animation: fadeIn 2s 2s forwards;
+}
+header p{
+  text-align: right;
+  margin-right: 5px;
+  padding-bottom: 5px;
+}
 section p{
+  opacity: 0;
   margin: 0 15px 15px 15px;
   text-align: left;
   line-height: 125%;
+  animation: fadeIn 2s 2.5s forwards;
 }
 button{
+  margin-top: 15px;
   opacity: 0;
   background-color: #1d3963;
   border-style: none;
