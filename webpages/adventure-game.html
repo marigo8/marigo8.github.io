@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Adventure Game</title>
+    <link href="./styles/adventure.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>ADVENTURE GAME</h1>
+    </header>
+    <section class="orange">
+      <h2>ROOM 1</h2>
+      <p class="narration">
+        You awaken in a ROOM. There is a BOX and a DOOR.
+      </p>
+      <p id="question">
+        WHAT WILL YOU DO?
+      </p>
+      <ul id="options">
+        <li class="visible"><button onclick="pick(0)">OPEN BOX</button></li>
+        <li class="visible"><button onclick="pick(1)">OPEN DOOR</button></li>
+        <li class="hidden"><button onclick="pick(2)"></button></li>
+        <li class="hidden"><button onclick="pick(3)"></button></li>
+      </ul>
+    </section>
+    <button class="nav" onclick="window.location='../webpages.html';">BACK</button>
+    <script src="../scripts/functions.js" type="text/javascript"></script>
+  </body>
+</html>

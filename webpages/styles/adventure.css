@@ -1,0 +1,50 @@
+body{
+  background-color: #000;
+  color: #fff;
+  font-family: serif;
+}
+header{
+  margin: auto;
+  margin-bottom: 100px;
+  text-align: center;
+  font-size: 32px;
+}
+section{
+  margin: auto;
+  max-width: 600px;
+  background-color: #222;
+}
+h2{
+  padding: 5px;
+  background-color: #264b84;
+}
+p{
+  margin-left: 10px;
+}
+ul{
+  list-style-type: none;
+  padding: 5px;
+  background-color: #111;
+}
+li{
+  margin: 5px;
+}
+button{
+  background-color: #1d3963;
+  border-style: none;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+}
+.hidden{
+  display: none;
+}
+.nav{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+button:hover{
+  background-color: #264b84;
+}
