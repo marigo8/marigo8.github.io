@@ -61,8 +61,14 @@ section{
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 10px;
-  animation: fadeUp 2s 1s forwards;
+  animation: fadeUp 2s .5s forwards;
   background-color: #1d3963;
+}
+.orange{
+  background-color: #632e1d;
+}
+.orange h2{
+  background-color: #8a4128;
 }
 h1{
   font-size: 100px;
@@ -87,7 +93,7 @@ h3{
   margin-left: 15px;
   width: 50%;
   background-color: #2e5b9e;
-  animation: fadeIn 2s 2s forwards;
+  animation: fadeIn 2s 1.75s forwards;
 }
 header p{
   text-align: right;
@@ -99,7 +105,7 @@ section p{
   margin: 0 15px 15px 15px;
   text-align: left;
   line-height: 125%;
-  animation: fadeIn 2s 2.5s forwards;
+  animation: fadeIn 2s 1.25s forwards;
 }
 button{
   margin-top: 15px;
@@ -110,7 +116,7 @@ button{
   text-align: center;
   color: #fff;
   font-size: 20px;
-  animation: fadeUp 2s 2s forwards;
+  animation: fadeUp 2s 1s forwards;
 }
 button:hover{
   background-color: #264b84;
