@@ -86,6 +86,10 @@ var clicks = [
   [". . ."],
   ["Okay."],
   ["Here.",1],
+  ["I just gave you another cookie?"],
+  ["Happy!?"],
+  ["No?"],
+  ["Fine then!"],
   ["Have another.",1],
   ["here's two more.",2],
   [". . .",1],
@@ -101,7 +105,7 @@ var clicks = [
   ["This whole time and you never knew!"],
   ["END OF THE LINE!"],
   ["NO MORE COOKIES FOR YOU!"],
-  ["HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAcoughHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!"],
+  ["HAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHAHA!"],
   ["SECRET WEAPON DEPLOYING IN 10!"],
   ["9! ITS ALL OVER FOR YOU!"],
   ["8! THERE WILL BE NO MORE COOKIES AFTER THIS!"],
@@ -121,7 +125,8 @@ function write(id,string){
   document.getElementById(id).innerHTML = string;
 }
 
-theButton.addEventListener("click", function(){
+
+var dialog = function(){
   if(i < clickslength){
     write("message",clicks[i][0]);
     if(clicks[i][1]){
@@ -131,7 +136,11 @@ theButton.addEventListener("click", function(){
       setTimeout(function(){document.getElementById("cookieCount").style.animation = "";}, 1000);
     }
     i++;
-  }else{
-    window.location = "./button/gameover.html";
   }
-});
+  if(i == clickslength){
+    theButton.setAttribute("onclick","openPage('./button/gameover.html')");
+    theButton.removeEventListener("click", dialog);
+  }
+};
+
+theButton.addEventListener("click", dialog);
