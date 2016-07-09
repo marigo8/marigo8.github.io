@@ -40,6 +40,10 @@
     opacity: 0;
   }
 }
+@keyframes pulse{
+  0% {background-color: #9bb8e4;}
+  100% {background-color: inherit;}
+}
 body{
   background-color: #222;
   animation: setUpBackground 1s 0s forwards;
@@ -118,6 +122,25 @@ button{
   font-size: 20px;
   animation: fadeUp 2s 1s forwards;
 }
+section button{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: #264b84;
+  animation: fadeIn 2s 2s forwards;
+}
 button:hover{
   background-color: #264b84;
+}
+section button:hover{
+  background-color: #2e5b9e;
+}
+button:click{
+  background-color: #1d3963;
+}
+a {
+  color: #608ed2;
+  text-decoration: none;
+}
+a:hover{
+  color: #9cb8e3;
 }
