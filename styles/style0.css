@@ -110,6 +110,7 @@ section p{
   text-align: left;
   line-height: 125%;
   animation: fadeIn 2s 1.25s forwards;
+  overflow-wrap: break-word;
 }
 button{
   margin-top: 15px;
