@@ -77,9 +77,7 @@ function getWords(){
 }
 function changeLib(){
   document.getElementById("inputs").innerHTML = "";
-  do{
-    var newLibNum = Math.floor(Math.random() * libs.length);
-  }while(newLibNum == libNum);
+  var newLibNum = (libNum + 1)%libs.length;
   libNum = newLibNum
   lib = libs[libNum];
   isNewForm = true;
