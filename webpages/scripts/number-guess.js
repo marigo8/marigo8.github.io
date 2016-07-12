@@ -60,7 +60,7 @@ function check(){
     say("INCORRECT",false);
     addPoints(Math.floor((difficulty / 4) + 1) * -1);
   }
-  return false;
+  document.getElementById("guess").value = "";
 }
 
 document.querySelector("#guess").addEventListener('keypress', function (e) {
