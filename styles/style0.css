@@ -44,6 +44,14 @@
   0% {background-color: #9bb8e4;}
   100% {background-color: inherit;}
 }
+@keyframes pulseGreen{
+  0% {background-color: #2e9e2e;}
+  100% {background-color: inherit;}
+}
+@keyframes pulseRed{
+  0% {background-color: #9e2e2e;}
+  100% {background-color: inherit;}
+}
 body{
   background-color: #222;
   animation: setUpBackground 1s 0s forwards;
