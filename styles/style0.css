@@ -176,7 +176,6 @@ input:hover{
   background-color: #224477;
 }
 
-/* Placeholder stuff thanks to toscho at http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css */
 ::-webkit-input-placeholder {
   color: #3971c6;
   font-style: italic;
@@ -194,4 +193,24 @@ input:hover{
 :-ms-input-placeholder {
   color: #3971c6;
   font-style: italic;
+}
+
+progress{
+  background-color: #f00;
+}
+progress::-webkit-progress-bar{
+  background-color: #11223b;
+}
+progress::-webkit-progress-value{
+  background-color: #618ed1;
+}
+progress::-moz-progress-bar{
+  background-color: #f00;
+}
+ul{
+  opacity: 0;
+  text-align: left;
+  list-style-type: none;
+  padding-left: 30px;
+  animation: fadeIn 2s 1.5s forwards; 
 }
