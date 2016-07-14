@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>MONSTER SLAYER</title>
+    <link type="text/css" href="../styles/style0.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <h1>MONSTER SLAYER</h1>
+    </header>
+    <section>
+      <h2 id="monsterName">
+        MONSTER
+      </h2>
+      <p>
+        HP
+        <progress id="monsterHP"></progress>
+      </p>
+    </section>
+    
+    <section>
+      <h2>
+        MONSTER SLAYER
+      </h2>
+      <p id="narration">
+        You encounter a monster!
+      </p>
+      <button id="action" onclick="getClick()">
+        ATTACK
+      </button>
+    </section>
+    
+    <section>
+      <h2>
+        YOU
+      </h2>
+      <p>
+        MONSTERS SLAIN [<span id="mslain">0</span>]
+      </p>
+      <p>
+        HP
+        <progress id="playerHP"></progress>
+      </p>
+      <p>
+        ATK [<span id="playerATK"></span>]
+      </p>
+      <p>
+        LEVEL [<span id="level">0</span>]
+        <progress id="exp"></progress>
+      </p>
+      <h3>
+        INVENTORY
+      </h3>
+      <p>
+        WEAPON [<span id="weapon"></span>]
+      </p>
+      <ul id="inventory">
+      </ul>
+    </section>
+    <button onclick="openPage('../webpages.html')">BACK TO WEBPAGES</button>
+    <script type="text/javascript" src="../scripts/functions.js"></script>
+    <script type="text/javascript" src="./scripts/mslayer.js"></script>
+    </body>
+</html>
