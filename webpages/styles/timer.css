@@ -6,7 +6,8 @@ body{
   color: #ddd;
 }
 h1{
-  font-size: 64px;
+  font-size: 128px;
+  margin-bottom: 30px;
 }
 pre{
   margin: 0;
