@@ -115,6 +115,7 @@ function getCommand(){
                 loadBox(entities[i]);
                 if(entities[i].lock){
                   terminal.innerHTML = "You unlock the "+entities[i].name+" with the "+key.name+".";
+                  removeFromInv(key);
                 }
               }else{
                 terminal.innerHTML = "It's locked.";
@@ -130,6 +131,7 @@ function getCommand(){
                   hasBribe = true;
                   loadRoom(entities[i].value);
                   terminal.innerHTML = "The "+entities[i].name+" accepts your "+player.inventory[j].name+" as a bribe and lets you through.";
+                  removeFromInv(player.inventory[j]);
                 }
               }
               if(!hasBribe){
@@ -254,6 +256,7 @@ function loadDoor(door,room){
     for(var i = 0, n = player.inventory.length; i < n; i++){
       if(player.inventory[i] == door.lock[0]){
         terminal.innerHTML = "You unlock the "+door.name+" with the "+player.inventory[i].name+".";
+        removeFromInv(player.inventory[i]);
         doorIsLocked = false;
         loadRoom(room);
       }
@@ -279,6 +282,14 @@ function add2Inv(box,item){
         submessage.innerHTML = "[NO ITEMS]";
       }
       terminal.innerHTML = "You take the "+item.name+"!";
+    }
+  }
+}
+
+function removeFromInv(item){
+  for(var i = 0, n = player.inventory.length; i < n; i++){
+    if(player.inventory[i] == item){
+      player.inventory.splice(i,1);
     }
   }
 }
