@@ -214,3 +214,6 @@ ul{
   padding-left: 30px;
   animation: fadeIn 2s 1.5s forwards; 
 }
+#output section{
+  animation-delay: 0s;
+}
