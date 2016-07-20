@@ -89,7 +89,6 @@ function getCommand(){
     }
   }
   command = [command[0],param2];
-  console.log(command);
   
   var incorrectSyntax = false;
   var success = false;
@@ -122,11 +121,7 @@ function getCommand(){
               }
               break;
             case "door":
-              if(entities[i] == currentRoom.exitLock){
-                loadDoor(entities[i],entities[i].value);
-              }else{
-                console.log("hey man");
-              }
+              loadDoor(entities[i],entities[i].value);
               break;
             case "bribe":
               var hasBribe = false;
@@ -252,7 +247,6 @@ function loadBox(box){
 }
 
 function loadDoor(door,room){
-  console.log("loading "+door.name);
   unloadEntity();
   currentEntity = door;
   if(door.lock){
